@@ -1,3 +1,16 @@
+/*
+ Theme Name: El Master Yoel
+ Theme URI: https://molink.com.co/
+ Author: Molink Tecnologia
+ Author URI: https://molink.com.co/
+ Description: Tema personalizado para El Master Yoel, desarrollado con Tailwind CSS.
+ Version: 1.2
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain: themeyoel
+ Tags: custom-logo, responsive-layout, one-column
+ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

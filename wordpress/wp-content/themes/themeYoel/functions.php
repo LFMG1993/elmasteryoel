@@ -4,7 +4,6 @@
  */
 function theme_yoel_setup() {
     // Habilita el soporte para que WordPress gestione el <title> de forma automática.
-    // Esto es crucial para el SEO y reemplaza la necesidad de la etiqueta <title> en header.php.
     add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'theme_yoel_setup' );
