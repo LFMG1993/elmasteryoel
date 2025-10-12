@@ -1,47 +1,47 @@
 # === WordPress Core ===
  # Ignorar las carpetas principales de WordPress
- /wordpress/wp-admin/
- /wordpress/wp-includes/
+/wordpress/wp-admin/
+/wordpress/wp-includes/
 
  # Ignorar los archivos en la raíz de la instalación de WordPress
- /wordpress/index.php
- /wordpress/license.txt
- /wordpress/readme.html
- /wordpress/wp-activate.php
- /wordpress/wp-blog-header.php
- /wordpress/wp-comments-post.php
- /wordpress/wp-config-sample.php
- /wordpress/wp-cron.php
- /wordpress/wp-links-opml.php
- /wordpress/wp-load.php
- /wordpress/wp-login.php
- /wordpress/wp-mail.php
- /wordpress/wp-settings.php
- /wordpress/wp-signup.php
- /wordpress/wp-trackback.php
- /wordpress/xmlrpc.php
+/wordpress/index.php
+/wordpress/license.txt
+/wordpress/readme.html
+/wordpress/wp-activate.php
+/wordpress/wp-blog-header.php
+/wordpress/wp-comments-post.php
+/wordpress/wp-config-sample.php
+/wordpress/wp-cron.php
+/wordpress/wp-links-opml.php
+/wordpress/wp-load.php
+/wordpress/wp-login.php
+/wordpress/wp-mail.php
+/wordpress/wp-settings.php
+/wordpress/wp-signup.php
+/wordpress/wp-trackback.php
+/wordpress/xmlrpc.php
 
  # === Contenido y Configuración Sensible ===
  # Ignorar el archivo de configuración principal
- /wordpress/wp-config.php
- /wordpress/.htaccess
+/wordpress/wp-config.php
+/wordpress/.htaccess
 
  # Ignorar contenido generado por el usuario y por WordPress
- /wordpress/wp-content/uploads/
- /wordpress/wp-content/upgrade/
- /wordpress/wp-content/cache/
- /wordpress/wp-content/advanced-cache.php
- /wordpress/wp-content/wp-cache-config.php
- /wordpress/wp-content/mu-plugins/
+/wordpress/wp-content/uploads/
+/wordpress/wp-content/upgrade/
+/wordpress/wp-content/cache/
+/wordpress/wp-content/advanced-cache.php
+/wordpress/wp-content/wp-cache-config.php
+/wordpress/wp-content/mu-plugins/
 
  # === Temas y Plugins por Defecto ===
  # Ignorar los temas que vienen con WordPress
- /wordpress/wp-content/themes/twenty*/
+/wordpress/wp-content/themes/twenty*/
 
  # Ignorar los plugins que vienen con WordPress
- /wordpress/wp-content/plugins/hello.php
- /wordpress/wp-content/plugins/akismet/
+/wordpress/wp-content/plugins/hello.php
+/wordpress/wp-content/plugins/akismet/
 
  # === Dependencias de Desarrollo ===
   # Ignorar las dependencias de Node.js dentro de CUALQUIER carpeta de tema o plugin
-  **/node_modules/
+**/node_modules/
