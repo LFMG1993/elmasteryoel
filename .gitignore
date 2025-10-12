@@ -1,37 +1,47 @@
-# Ignorar la carpeta completa de WordPress al principio
-/wordpress/
+# === WordPress Core ===
+ # Ignorar las carpetas principales de WordPress
+ /wordpress/wp-admin/
+ /wordpress/wp-includes/
 
-# ¡PERO! Incluir específicamente la carpeta de contenido
-!/wordpress/wp-content/
+ # Ignorar los archivos en la raíz de la instalación de WordPress
+ /wordpress/index.php
+ /wordpress/license.txt
+ /wordpress/readme.html
+ /wordpress/wp-activate.php
+ /wordpress/wp-blog-header.php
+ /wordpress/wp-comments-post.php
+ /wordpress/wp-config-sample.php
+ /wordpress/wp-cron.php
+ /wordpress/wp-links-opml.php
+ /wordpress/wp-load.php
+ /wordpress/wp-login.php
+ /wordpress/wp-mail.php
+ /wordpress/wp-settings.php
+ /wordpress/wp-signup.php
+ /wordpress/wp-trackback.php
+ /wordpress/xmlrpc.php
 
-# Ignorar todo dentro de wp-content...
-/wordpress/wp-content/*
+ # === Contenido y Configuración Sensible ===
+ # Ignorar el archivo de configuración principal
+ /wordpress/wp-config.php
+ /wordpress/.htaccess
 
-# ...EXCEPTO las carpetas de temas y plugins
-!/wordpress/wp-content/themes/
-!/wordpress/wp-content/plugins/
+ # Ignorar contenido generado por el usuario y por WordPress
+ /wordpress/wp-content/uploads/
+ /wordpress/wp-content/upgrade/
+ /wordpress/wp-content/cache/
+ /wordpress/wp-content/advanced-cache.php
+ /wordpress/wp-content/wp-cache-config.php
+ /wordpress/wp-content/mu-plugins/
 
-# Ignorar archivos comunes de temas que no quieres versionar
-/wordpress/wp-content/themes/index.php
-/wordpress/wp-content/themes/twenty*/
+ # === Temas y Plugins por Defecto ===
+ # Ignorar los temas que vienen con WordPress
+ /wordpress/wp-content/themes/twenty*/
 
-# Ignorar archivos de plugins que no son tuyos (puedes gestionarlos con Composer o manualmente)
-/wordpress/wp-content/plugins/index.php
-/wordpress/wp-content/plugins/hello.php
+ # Ignorar los plugins que vienen con WordPress
+ /wordpress/wp-content/plugins/hello.php
+ /wordpress/wp-content/plugins/akismet/
 
-# Ignorar uploads y otros archivos generados
-/wordpress/wp-content/uploads/
-/wordpress/wp-content/upgrade/
-/wordpress/wp-content/mu-plugins/
-/wordpress/wp-content/advanced-cache.php
-/wordpress/wp-content/wp-cache-config.php
-/wordpress/wp-content/cache/
-
-# Archivos de configuración y del sistema
-.DS_Store
-Thumbs.db
-wp-config.php
-.htaccess
-
-# Dependencias de Node.j
-*/node_module/
+ # === Dependencias de Desarrollo ===
+  # Ignorar las dependencias de Node.js dentro de CUALQUIER carpeta de tema o plugin
+  **/node_modules/
