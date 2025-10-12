@@ -1,0 +1,49 @@
+# Versión del formato del archivo docker-compose
+version: '3.8'
+
+# Definición de los servicios (contenedores) que vamos a usar
+services:
+  # 1. El servicio para la base de datos MySQL
+  db:
+    image: mysql:8.0 # Usa la imagen oficial de MySQL versión 8.0
+    container_name: mi_proyecto_db
+    volumes:
+      - db_data:/var/lib/mysql # Mapea un volumen para que los datos de la BD no se pierdan al apagar el contenedor
+    restart: always # Siempre reinicia el contenedor si se detiene
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: 'wordpress_db'
+      MYSQL_USER: 'wordpress_user'
+      MYSQL_PASSWORD: 'password'
+    networks:
+      - wordpress_net
+
+  # 2. El servicio para WordPress
+  wordpress:
+    depends_on:
+      - db # Le dice a Docker que inicie este contenedor DESPUÉS de que el de la BD esté listo
+    image: wordpress:latest # Usa la última imagen oficial de WordPress (con PHP y Apache)
+    container_name: mi_proyecto_wp
+    volumes:
+      # Mapea la carpeta 'wordpress' local a la carpeta de la instalación de WordPress en el contenedor
+      # ¡Esta es la clave! Los archivos estarán en tu máquina y el contenedor los leerá.
+      - ./wordpress:/var/www/html
+    ports:
+      - "8080:80" # Mapea el puerto 80 del contenedor al puerto 8080 de tu máquina. Accederás desde http://localhost:8080
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306 # El 'hostname' es el nombre del servicio de la BD ('db')
+      WORDPRESS_DB_USER: 'wordpress_user'
+      WORDPRESS_DB_PASSWORD: 'password'
+      WORDPRESS_DB_NAME: 'wordpress_db'
+    networks:
+      - wordpress_net
+
+# Definición de los volúmenes
+volumes:
+  db_data: {}
+
+# Definición de las redes para que los contenedores se comuniquen
+networks:
+  wordpress_net:
+    driver: bridge

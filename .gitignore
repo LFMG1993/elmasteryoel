@@ -1,0 +1,37 @@
+# Ignorar la carpeta completa de WordPress al principio
+/wordpress/
+
+# ¡PERO! Incluir específicamente la carpeta de contenido
+!/wordpress/wp-content/
+
+# Ignorar todo dentro de wp-content...
+/wordpress/wp-content/*
+
+# ...EXCEPTO las carpetas de temas y plugins
+!/wordpress/wp-content/themes/
+!/wordpress/wp-content/plugins/
+
+# Ignorar archivos comunes de temas que no quieres versionar
+/wordpress/wp-content/themes/index.php
+/wordpress/wp-content/themes/twenty*/
+
+# Ignorar archivos de plugins que no son tuyos (puedes gestionarlos con Composer o manualmente)
+/wordpress/wp-content/plugins/index.php
+/wordpress/wp-content/plugins/hello.php
+
+# Ignorar uploads y otros archivos generados
+/wordpress/wp-content/uploads/
+/wordpress/wp-content/upgrade/
+/wordpress/wp-content/mu-plugins/
+/wordpress/wp-content/advanced-cache.php
+/wordpress/wp-content/wp-cache-config.php
+/wordpress/wp-content/cache/
+
+# Archivos de configuración y del sistema
+.DS_Store
+Thumbs.db
+wp-config.php
+.htaccess
+
+# Dependencias de Node.j
+*/node_module/
