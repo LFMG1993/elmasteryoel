@@ -3,9 +3,9 @@
     <!-- 1. SECCIÓN HÉROE -->
     <section class="relative bg-cover bg-top md:bg-center text-fondo-claro py-60 md:py-72 text-center" id="inicio"
              style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/tradingYoel.avif');">
-        <div class="absolute inset-0 bg-principal/70"></div>
+        <div class="absolute inset-0 bg-principal/50"></div>
         <div class="container mx-auto px-4 relative z-10">
-            <h1 class="font-titulo text-4xl md:text-6xl font-bold mb-4">De 0 a rentable en 90 días</h1>
+            <h1 class="font-titulo text-4xl md:text-6xl font-bold mb-4">De 0 a Rentable en 90 días</h1>
             <p class="font-cuerpo text-lg md:text-xl max-w-3xl mx-auto opacity-90 mb-8">Tu camino hacia la rentabilidad
                 en solo 3 meses.</p>
             <a href="https://soporte.ganaporencuestas.com/go/002892a1-402c-4952-81ff-063b30c0bff4" target="_blank"

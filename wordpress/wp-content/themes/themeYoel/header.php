@@ -19,15 +19,6 @@
     <meta name="twitter:description"
           content="Tu camino hacia la rentabilidad en solo 3 meses. Aprende trading con estrategias efectivas.">
     <meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/tradingYoel.avif">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
-          as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap">
-    </noscript>
     <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/images/tradingYoel.avif" as="image"
           fetchpriority="high">
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png" type="image/png">
@@ -58,7 +49,7 @@
                    class="text-sm font-bold hover:text-acento-dorado transition-colors px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-acento-dorado">Servicios</a>
                 <a href="#contacto"
                    class="text-sm font-bold hover:text-acento-dorado transition-colors px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-acento-dorado">Contacto</a>
-                <a href="https://www.skool.com/lmc/about?ref=56b96871574a4b50a96bdd0953037d01" target="_blank"
+                <a href="https://soporte.ganaporencuestas.com/go/002892a1-402c-4952-81ff-063b30c0bff4" target="_blank"
                    class="ml-4 inline-block bg-acento-dorado text-principal font-bold text-sm py-2 px-5 rounded-md hover:bg-yellow-500 transition-transform transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-principal focus:ring-acento-dorado">Empieza
                     Ahora</a>
             </nav>
@@ -86,7 +77,7 @@
             <a href="#quien-soy" class="font-bold hover:text-acento-dorado transition-colors">Quiénes Somos</a>
             <a href="#servicios" class="font-bold hover:text-acento-dorado transition-colors">Servicios</a>
             <a href="#contacto" class="font-bold hover:text-acento-dorado transition-colors">Contacto</a>
-            <a href="https://www.skool.com/lmc/about?ref=56b96871574a4b50a96bdd0953037d01" target="_blank"
+            <a href="https://soporte.ganaporencuestas.com/go/002892a1-402c-4952-81ff-063b30c0bff4" target="_blank"
                class="mt-4 inline-block bg-acento-dorado text-principal font-bold py-3 px-8 rounded-md hover:bg-yellow-500">Empieza
                 Ahora</a>
         </nav>
