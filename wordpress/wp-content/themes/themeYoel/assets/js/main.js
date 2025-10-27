@@ -1,16 +1,39 @@
 document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenuButton = document.getElementById('close-menu-button');
+    const menuPanel = document.getElementById('mobile-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const body = document.body;
     const header = document.querySelector('header.sticky');
     const navLinks = document.querySelectorAll('a[href^="#"]');
 
     let activeAnimation = {element: null, timeoutId: null};
 
-    // Lógica para el menú móvil
-    if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+    // --- Lógica para el menú deslizante ---
+    const openMenu = () => {
+        if (!menuPanel || !menuOverlay) return;
+        menuPanel.classList.remove('translate-x-full');
+        menuOverlay.classList.remove('opacity-0', 'pointer-events-none');
+        body.style.overflow = 'hidden'; // Evita el scroll del fondo
+    };
+
+    const closeMenu = () => {
+        if (!menuPanel || !menuOverlay) return;
+        menuPanel.classList.add('translate-x-full');
+        menuOverlay.classList.add('opacity-0', 'pointer-events-none');
+        body.style.overflow = ''; // Restaura el scroll
+    };
+
+    if (mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', openMenu);
+    }
+
+    if (closeMenuButton) {
+        closeMenuButton.addEventListener('click', closeMenu);
+    }
+
+    if (menuOverlay) {
+        menuOverlay.addEventListener('click', closeMenu);
     }
 
     // Lógica para el scroll suave
@@ -53,10 +76,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 activeAnimation = {element: targetElement, timeoutId: newTimeoutId};
 
                 // Cierra el menú móvil después de hacer clic en un enlace
-                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
+                if (menuPanel && !menuPanel.classList.contains('translate-x-full')) {
+                    closeMenu();
                 }
             }
         });
+    });
+    // Cerrar menú con la tecla 'Escape'
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !menuPanel.classList.contains('translate-x-full')) {
+            closeMenu();
+        }
     });
 });

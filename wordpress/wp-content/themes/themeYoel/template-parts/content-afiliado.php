@@ -31,16 +31,9 @@ $tracking_url = isset($args['tracking_url']) ? $args['tracking_url'] : '#';
 
             <!-- 2. Título de la página principal -->
             <h1 class="font-titulo text-4xl md:text-6xl font-bold mb-4">De 0 a Rentable en 90 días</h1>
-            <p class="text-lg md:text-xl max-w-3xl mx-auto opacity-90 mb-12">Tu camino hacia la rentabilidad
+            <p class="text-lg md:text-xl max-w-3xl mx-auto opacity-90 mb-12">Tu camino en el trading hacia la
+                rentabilidad
                 en solo 3 meses.</p>
-
-            <!-- 3. Mensaje del formulario e imagen -->
-            <p class="mb-6">En el enlace encontraras el siguiente formulario para lograr la rentabilidad:</p>
-            <div class="max-w-xl mx-auto mb-12">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/formulario-ejemplo.png"
-                     alt="Ejemplo del formulario de registro"
-                     class="rounded-xl shadow-lg shadow-black/50 w-full max-w-xs mx-auto h-auto object-cover">
-            </div>
 
             <!-- 4. Mensaje de urgencia -->
             <p class="font-titulo text-2xl text-acento-dorado font-bold mb-8">
@@ -58,6 +51,13 @@ $tracking_url = isset($args['tracking_url']) ? $args['tracking_url'] : '#';
                 <li class="flex items-start"><span class="mr-3 text-green-400 text-xl">✅</span> <span>Clases en vivo todos los miercoles con el Master Yoel (Para los miembros del MS10X)</span>
                 </li>
             </ul>
+
+            <!-- 3.  Imagen Formulario -->
+            <div class="max-w-xl mx-auto mb-12">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/formulario-ejemplo.png"
+                     alt="Ejemplo del formulario de registro"
+                     class="rounded-xl shadow-lg shadow-black/50 w-full max-w-xs mx-auto h-auto object-cover">
+            </div>
 
             <!-- 6. Llamada a la acción final con imagen -->
             <div class="max-w-md mx-auto">

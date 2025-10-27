@@ -13,6 +13,7 @@ if (empty($tracking_url)) {
     $tracking_url = '#'; // O la URL principal de tu sitio.
 }
 ?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
