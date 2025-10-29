@@ -55,10 +55,10 @@
             <div>
                 <h3 class="font-titulo font-bold text-lg mb-4 text-fondo-claro">Navegación</h3>
                 <div class="flex flex-col items-center md:items-start gap-y-2 text-sm">
-                    <a href="#inicio" class="hover:text-acento-dorado transition-colors">Inicio</a>
+                    <a href="#quien-soy" class="hover:text-acento-dorado transition-colors">Conoce Más</a>
+                    <a href="#estrategias" class="hover:text-acento-dorado transition-colors">Estrategias y gestion del Riesgo</a>
                     <a href="#servicios" class="hover:text-acento-dorado transition-colors">Servicios</a>
-                    <a href="#contacto" class="hover:text-acento-dorado transition-colors">Contacto</a>
-                    <a href="#" class="hover:text-acento-dorado transition-colors">Política de Datos</a>
+                    <a href="#aprende-con-yoel" class="hover:text-acento-dorado transition-colors">Empieza ahora con Yoel Montes</a>
                 </div>
             </div>
         </div>

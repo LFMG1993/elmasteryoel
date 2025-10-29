@@ -54,7 +54,7 @@
                         son los Índices Sintéticos?</a>
                     <a href="#que-es-broker"
                        class="text-xs font-bold hover:text-acento-dorado transition-colors px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-acento-dorado">¿Qué
-                        es un Bróker</a>
+                        es un Bróker?</a>
                     <a href="#que-es-weltrade"
                        class="text-xs font-bold hover:text-acento-dorado transition-colors px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-acento-dorado">¿Qué
                         es Weltrade?</a>

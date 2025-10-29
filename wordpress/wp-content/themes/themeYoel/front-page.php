@@ -7,6 +7,13 @@
         <div class="container mx-auto px-4 relative z-10">
             <h1 class="font-titulo text-4xl md:text-6xl font-bold mb-16 text-center">De 0 a Rentable en 90 días</h1>
             <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="md:w-2/5 flex justify-center md:justify-center">
+                    <video class="rounded-lg shadow-xl w-full max-w-xs" playsinline autoplay loop controls>
+                        <source src="<?php echo get_template_directory_uri(); ?>/assets/video/video1.mp4"
+                                type="video/mp4">
+                        Tu navegador no soporta el tag de video.
+                    </video>
+                </div>
                 <div class="md:w-3/5 text-left bg-black/60 p-6 rounded-xl shadow-lg">
                     <p class="font-cuerpo text-lg md:text-xl opacity-90 mb-6 text-justify text-white">
                         Bienvenido a la comunidad de Yoel Montes, conocido como elmasteryoel, un mentor y trader
@@ -19,14 +26,6 @@
                         Empieza hoy tu formación con Yoel Montes — Transforma tu conocimiento en ingresos reales con
                         estrategias probadas.
                     </p>
-                </div>
-
-                <div class="md:w-2/5 flex justify-center md:justify-center">
-                    <video class="rounded-lg shadow-xl w-full max-w-xs" playsinline autoplay loop controls>
-                        <source src="<?php echo get_template_directory_uri(); ?>/assets/video/video1.mp4"
-                                type="video/mp4">
-                        Tu navegador no soporta el tag de video.
-                    </video>
                 </div>
             </div>
         </div>
@@ -62,7 +61,7 @@
         <div class="container mx-auto px-4">
             <h2 class="font-titulo text-3xl md:text-4xl font-bold text-center mb-6">¿Qué Es Trading?</h2>
             <p class="font-cuerpo text-lg md:text-xl text-center max-w-3xl mx-auto mb-12 opacity-90 text-white">
-                👉 Trading significa comprar y vender activos financieros con el objetivo de obtener ganancias. En
+                Trading significa comprar y vender activos financieros con el objetivo de obtener ganancias. En
                 palabras simples, es como un “negocio digital” donde ganas si compras barato y vendes caro… o vendes
                 caro y luego compras barato.
             </p>
@@ -532,8 +531,8 @@
             </div>
             <div class="text-center mt-16">
                 <a href="https://soporte.ganaporencuestas.com/go/002892a1-402c-4952-81ff-063b30c0bff4" target="_blank"
-                   class="inline-block bg-acento-dorado text-principal font-bold font-titulo py-3 px-8 rounded-lg text-lg hover:bg-yellow-500 transition-transform transform hover:-translate-y-1">Asesoria
-                    Personalizada</a>
+                   class="inline-block bg-acento-dorado text-principal font-bold font-titulo py-3 px-8 rounded-lg text-lg hover:bg-yellow-500 transition-transform transform hover:-translate-y-1">Uneté
+                    a Lion Mode Club</a>
             </div>
         </div>
     </section>
